@@ -1,0 +1,4 @@
+{
+  "jwtPrivateKey": "rates_jwtPrivateKey",
+  "db": "mongodb://localhost/rates"
+}

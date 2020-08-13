@@ -1,0 +1,5 @@
+{
+  "jwtPrivateKey": "rates_jwtPrivateKey",
+  "db": "rates_db",
+  "apiKey": "API_KEY"
+}
