@@ -13,7 +13,7 @@ require('./startup/prod')(app);
 console.log(process.env.NODE_ENV);
 console.log(app.get('env'));
 
-const port = process.env.PORT || 3900;
+const port = process.env.PORT || 3800;
 const server = app.listen(port, () =>
   winston.info(`Listening on port ${port}...`)
 );
