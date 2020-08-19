@@ -2,11 +2,12 @@ const axios = require('axios');
 const express = require('express');
 const auth = require('../middleware/auth');
 const rateLimit = require('../middleware/rateLimit');
+const config = require('../startup/config');
 
 const router = express.Router();
 
 const countriesApi = 'https://restcountries.eu/rest/v2/';
-const apiKey = 'ef4e151f2368bd41bbc921df96ae7d0e';
+const apiKey = config.get('API_KEY');
 
 router.get('/all', async (req, res) => {
   const { data: allCountries } = await axios.get(`${countriesApi}all`);

@@ -1,4 +1,5 @@
 {
   "jwtPrivateKey": "1234",
-  "db": "mongodb://localhost/rates_tests"
+  "db": "mongodb://localhost/rates_tests",
+  "apiKey": "API_KEY"
 }
