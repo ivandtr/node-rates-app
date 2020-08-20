@@ -7,7 +7,7 @@ const config = require('../startup/config');
 const router = express.Router();
 
 const countriesApi = 'https://restcountries.eu/rest/v2/';
-const apiKey = config.get('API_KEY');
+const apiKey = config.get('apiKey');
 
 router.get('/all', async (req, res) => {
   const { data: allCountries } = await axios.get(`${countriesApi}all`);
